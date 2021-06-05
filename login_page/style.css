@@ -1,0 +1,32 @@
+body{
+    margin: 20% 35% ;
+    background:#556;
+}
+#section{
+    text-align: center;
+    padding: 1.5em;
+    margin: 5em 0 5em 5em;
+    background: #cacaca;
+}
+#form{
+    height: 100%;
+    width: 100%;
+    padding: 1.5em;
+    background:#fff;
+    margin: -5em 0 0 -3em;
+    border:  5px solid #000000;
+     
+}
+.h2-form{
+    text-shadow: 5px 5px 5px #556;
+}
+#btn{
+    color: #fff;
+    background:green;
+    width: 150px;
+    height: 10px 0px;
+    padding: 12px;
+    border-radius:20px ;
+    
+    
+}
