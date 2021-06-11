@@ -1,3 +1,9 @@
+<?php
+session_start(); //bank connection
+$db = mysqli_connect("localhost", "root", "", "authentication"); //create authentication in bank/phpMyAdmin
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -17,7 +23,7 @@
             <tr>
                 <td>Usuario:</td>
                 <td>
-                    <input type=" text" name="Usuario" class="textInput">
+                    <input type=" text" name="User" class="textInput">
         </td>
         </tr>
         <tr>
@@ -29,13 +35,13 @@
         <tr>
             <td>Senha:</td>
             <td>
-                <input type="senha" name="senha" class="textInput">
+                <input type="password" name="password" class="textInput">
             </td>
         </tr>
         <tr>
             <td>Senha Novamente:</td>
             <td>
-                <input type="senha" name="senha2" class="textInput">
+                <input type="password" name="password2" class="textInput">
             </td>
         </tr>
         <tr>
