@@ -14,18 +14,18 @@ body{
     padding: 1.5em;
     background:#fff;
     margin: -3em 0 0 -3em;
-    border:  5px solid #cacaca;
+    border:  5% solid #cacaca;
 }
 .h2-form{
-    text-shadow: 5px 5px 5px #556;
+    text-shadow: 5% 5% 5% #556;
 }
 #btn{
     color: #fff;
     background:green;
-    width: 150px;
-    height: 10px 0px;
-    padding: 12px;
-    border-radius:20px ;
+    width: 150%;
+    height: 10% 0%;
+    padding: 12%;
+    border-radius:20% ;
     
     
 }
