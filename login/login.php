@@ -11,7 +11,8 @@ $senha = $_POST['password'];
 $a = mysqli_connect("localhost", "root", "");
 mysqli_select_db($a, "login");
 
-$result = mysqli_query($a, "SELECT * FROM login  WHERE username = '$usuario' and password = '$senha'") or die("Falha ao consultar Banco de Dados " . mysqli_error());
+$result = mysqli_query($a, "SELECT * FROM login  WHERE username = '$usuario' and password = '$senha'")
+    or die("Falha ao consultar Banco de Dados " . mysqli_error($a));
 
 $row = mysqli_fetch_array($result);
 
