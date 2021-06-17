@@ -12,6 +12,11 @@ ul {
     width: 100%;
 
 }
+.logo {
+    float: left;
+    width: 70%;
+    padding: 10px; 
+}
 .menu {
     width:70%;
     float:left;

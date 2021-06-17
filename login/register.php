@@ -1,6 +1,6 @@
 <?php
 session_start(); //bank connection
-$db = mysqli_connect("localhost", "root", "", "authentication"); //create authentication in bank/phpMyAdmin
+$conexao = mysqli_connect("localhost", "root", ""); //create authentication in bank/phpMyAdmin
 
 if (isset($_POST['register_btn'])) {
     $user = mysqli_real_escape_string($_POST['user']);
@@ -11,10 +11,10 @@ if (isset($_POST['register_btn'])) {
     if ($password == $password2) {  //create user
         $password = md5($password); //storing for security purpose
         $sql = "INSERT INTO users(user, email, password) VALUES ('$user', '$email', '$password')";
-        mysqli_query($db, $sql);
+        mysqli_query($conexao, $sql);
         $_SESSION['message'] = " login com sucesso."; //alert - successfully logged in > login successfully 
         $_SESSION['user'] = $user;
-        header("Location:home.php"); //redirect to home page when browsing
+        header("Location:login.php"); //redirect to home page when browsing
     } else { //alert - The two passwords are not the same
         $_SESSION['message'] = " senhas não são idênticas!";
     }

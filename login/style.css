@@ -22,7 +22,7 @@ body{
 #btn{
     color: #fff;
     background:green;
-    width: 15%;
+    width: 15% auto;
     height: 10% 0%;
     padding: 3%;
     border-radius:20% ;
