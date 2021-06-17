@@ -1,19 +1,26 @@
 body{
     margin: 20% 35% ;
-    background:#556;
+    background-repeat: no-repeat;
+    /* background:#556; */
+    background-image: url(/login/img/bibliotec.jfif);
 }
-#section{
+input{
+    font-size: 70%;
+}
+div#section{
     text-align: center;
     padding: 1.5em;
-    /* margin: 5em 0 5em 5em; */
     background: #cacaca;
+    border-radius: 53px;
 }
-#form{
+div#form{
     height: 100%;
     width: 100%;
     padding: 1.5em;
+    font-size: 26px;
     background:#fff;
     margin: -3em 0 0 -3em;
+    border-radius: 53px;
     border:  5% solid #cacaca;
 }
 .h2-form{
@@ -23,9 +30,13 @@ body{
     color: #fff;
     background:green;
     width: 15% auto;
-    height: 10% 0%;
     padding: 3%;
-    border-radius:20% ;
-    
-    
+    border-radius:15% ;
+}
+a{
+    color: blue;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
 }
