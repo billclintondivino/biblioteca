@@ -9,31 +9,33 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="img">
 
     <div id="section">
-        <div id="form">
-            <form method="POST" action="login.php">
-                <!--process.php -->
-                <h2 class="h2-form">Login</h2>
-                <p>
-                    <label> Usuario: </label>
-                    <input type="text" id="username" name="username" placeholder="Usuário" />
-                </p>
-                <p>
-                    <label> Senha: </label>
-                    <input type="password" id="password" name="password" placeholder="Senha" />
-                </p>
-                <p>
-                    <input type="submit" id="btn" value="acessar" />
-                </p>
-                <p>
-                    <a href="">Ainda não possui conta?
-                        <strong>Cadastre-se</strong>
-                    </a>
-                </p>
-            </form>
-        </div>
+        
+            <div id="form">
+                <form method="POST" action="login.php">
+                    <!--process.php -->
+                    <h2 class="h2-form">Login</h2>
+                    <p>
+                        <label> Usuario: </label>
+                        <input type="text" id="username" name="username" placeholder="Usuário" />
+                    </p>
+                    <p>
+                        <label> Senha: </label>
+                        <input type="password" id="password" name="password" placeholder="Senha" />
+                    </p>
+                    <p>
+                        <!-- <input /> -->
+                        <button class="button" style="vertical-align:middle" type="submit"><span>acessar</span></button>
+                    </p>
+                    <p>
+                        <a href="">Ainda não possui conta?
+                            <strong>Cadastre-se</strong>
+                        </a>
+                    </p>
+                </form>
+            </div>
     </div>
 </body>
 
