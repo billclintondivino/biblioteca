@@ -10,6 +10,15 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <title>Home</title>
+    <style>
+        .livro {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+    </style>
 </head>
 
 <body>
@@ -44,6 +53,22 @@
             </div>
         </div>
     </header>
+    <div class="livro">
+    <h2>nome do livro1</h2>
+    <p>descricao</p>
+    </div>
+    <div class="livro">
+    <h2>nome do livro2</h2>
+    <p>descricao</p>
+    </div>
+    <div class="livro">
+    <h2>nome do livro3</h2>
+    <p>descricao</p>
+    </div>
+    <div class="livro">
+    <h2>nome do livro4</h2>
+    <p>descricao</p>
+    </div>
 </body>
 
 </html>
