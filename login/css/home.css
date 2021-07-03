@@ -5,6 +5,37 @@
   box-sizing: border-box;
   font-family: 'Montserrat',sans-serif;
 }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h3 {
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  background-color: #e6a551;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newspaper {
+  column-count: 3;
+  margin:  2% 12%;
+  width:78%;
+  height: auto;
+}
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width:74%;
+  padding: 2%;
+}
 nav{
   background: #e6a551;
   padding: 5px 40px;
@@ -19,6 +50,7 @@ nav ul{
 nav ul li{
   padding: 15px 0;
   cursor: pointer;
+  
 }
 nav ul li.items{
   align-items: center;
