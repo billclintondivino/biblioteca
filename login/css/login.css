@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
 /*aqui é login*/
+body{
+    background: rgba(0,0,0,0.6);
+}
 .row{
     display: flex;
     align-items: center;
@@ -12,14 +15,12 @@
     min-width: 300px;
 }
 .form-box{
-    width: 300px;
-	height: 400px;
+    width: auto;
 	position: relative;
-    top: 50px;
-    left: 120px;
-	background: rgba(0,0,0,0.6);
+    top: 100px;
+    left: auto;
 }
-.main-heading{
+    .main-heading{
     color: #e6a551;
     padding-bottom: 20px;
 }
