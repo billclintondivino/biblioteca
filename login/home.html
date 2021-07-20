@@ -34,13 +34,14 @@
                 <img src="./img/android-chrome-192x192.png" width="60" height="55" />
                 <li class="logo">Biblioteca Online</li>
                 <li class="items"><strong><a href="#">Home</a></strong></li>
-                <li class="items"><a href="http://127.0.0.1:5500/login/sobre.html#">Sobre</a></li>
+                <li class="items"><a href="https://localhost/ppweb/projeto/biblioteca/login/sobre.html#">Sobre</a></li>
                 <li class="items"><a href="#">Contato</a></li>
-                <li class="items"><a href="http://127.0.0.1:5500/login/login.html#">Login</a></li>
+                <li class="items"><a href="https://localhost/ppweb/projeto/biblioteca/login/login.html#">Login</a></li>
 
                 <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
+
         <!-- carousel -->
         <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -76,7 +77,9 @@
         </div>
 
         <div>
+
             <h3 " align=" center"><strong>titulo</strong> </h3>
+
             <div class="newspaper" align="justfy">
 
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
@@ -85,7 +88,9 @@
                     dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
                     facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
                     delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
-                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                </p>
+
             </div>
         </div>
 
@@ -99,19 +104,16 @@
         </ul>
     </div> -->
 
-
-        <!-- RDP  -->
-
-        <!-- DRT -->
-        <nav>
-            <ul>
-                <li class="logo">
-                    <center>Biblioteca Online © 2021. </center>
-                </li>
-            </ul>
-        </nav>
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: #ff8c00;">
+                Biblioteca Online ©
+                <?php echo date("Y");?>
+            </div>
+        </footer>
 
     </div>
+
     <!-- Js -->
     <script>
         $(document).ready(function () {
@@ -121,6 +123,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
