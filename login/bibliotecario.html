@@ -2,60 +2,156 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <title>Biblioteca Online</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="../login/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../login/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../login/img/favicon-16x16.png">
-    <link rel="manifest" href="../login/img/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="../login/css/home.css">
-    <link rel="stylesheet" type="text/css" href="../login/css/login.css">
-    <!-- BOOTSTRAP 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script><!-- icone user -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Biblioteca Online</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="../login/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../login/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../login/img/favicon-16x16.png">
+        <link rel="manifest" href="../login/img/site.webmanifest">
+        <link rel="stylesheet" type="text/css" href="../login/css/home.css">
+        <link rel="stylesheet" type="text/css" href="../login/css/login.css">
+        <!-- BOOTSTRAP 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- jquery -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
 
 <body>
-
     <div>
         <nav>
             <ul>
                 <img src="./img/android-chrome-192x192.png" width="60" height="55" />
                 <li class="logo">Biblioteca Online</li>
-
-                <li align="center"><i class='far fa-user-circle' style='font-size:200%; color:green'></i><a href="#">
+                <li align="center"><i class='far fa-user-circle' style='font-size:200%; color:rgb(1, 148, 1)'></i><a
+                        href="#">
                         <h6>admin</h6>
                     </a></li>
             </ul>
-
         </nav>
-
-        <div class="container mt-3">
+        <div class="container">
             <h2 align="center">Painel</h2>
             <div class="d-flex bg-light" style="width: 100%; height:100%">
                 <div class="p-3 border">
-                    textos 
-                    campos
-                    butoes
+                    <div class="container">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Consultar Saldo + icone pesquisar
+                            </button>
+                            <div class="dropdown-menu">
+                                <div class="dropdown-item" href="#">
+                                    <center><strong>Insira o CPF do aluno:</strong> </center>
+                                </div>
+                                <form action="/consult_balance.php" class="was-validated">
+                                    <div class="form-group">
+                                        <!-- <label for="pwd"><strong> CPF:</strong></label> -->
+                                        <center>
+                                            <input type="text" class="form-control" id="" placeholder="123.456.789-00"
+                                                name="" required>
+                                            <div class="valid-feedback">Agradeço!.</div>
+                                            <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                    </div>
+                                    </center>
+                                    <center>
+
+                                        <!-- <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" name="remember"
+                                                    required>confirme.
+                                                <div class="valid-feedback">Valido.</div>
+                                                <div class="invalid-feedback">Marque esta caixa de seleção para
+                                                    continuar.</div>
+                                            </label>
+                                        </div> -->
+
+                                        <button type="submit" class="btn btn-success">Buscar</button>
+                                        <button type="reset" class="btn btn-danger">Cancelar</button>
+
+                                    </center>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Cadastrar Livro
+                            </button>
+
+                            <div class="dropdown-menu">
+
+                                <div class="dropdown-item" href="#">
+                                    <center><strong>Livro:</strong> </center>
+                                </div>
+
+                                <form action="/consult_balance.php" class="was-validated">
+
+                                    <div class="form-group">
+                                        <label for=""><strong> Nome do Livro :</strong></label>
+                                        <input type="text" class="form-control" id="" placeholder="" name="" required>
+                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                        <label for=""><strong>Editora :</strong></label>
+                                        <input type="text" class="form-control" id="" placeholder="" name="" required>
+                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                        <label for=""><strong> Autor :</strong></label>
+                                        <input type="text" class="form-control" id="" placeholder="" name="" required>
+                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                        <label for=""><strong> Ano :</strong></label>
+                                        <input type="date" class="form-control" id="" placeholder="" name="" required>
+                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                        <label for=""><strong> Quantidade :</strong></label>
+                                        <input type="number" class="form-control" id="" placeholder="" name="" required>
+                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                    </div>
+
+                                    <center>
+
+                                        <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="checkbox" name="remember"
+                                                    required>confirme.
+                                                <div class="valid-feedback">Valido.</div>
+                                                <div class="invalid-feedback">Marque esta caixa de seleção para
+                                                    continuar.</div>
+                                            </label>
+                                        </div>
+
+                                    </center>
+
+                                    <button type="reset" class="btn btn-danger">Limpar</button>
+                                    <button type="submit" class="btn btn-success">Avançar </button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="border"><img src="./img/bibliotecario.jpeg" alt="bibliotecario" width="100%" height="100%"></div>
+
+                <div class="border"><img src="./img/bibliotecario.jpeg" alt="bibliotecario" width="100%" height="100%">
+                </div>
+
             </div>
             <br>
         </div>
 
-
         <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: #ff8c00;">
-                Biblioteca Online ©
+                Biblioteca Online © 2021
                 <?php
                 echo date("Y");
                 ?>
