@@ -20,14 +20,14 @@
         <!-- jquery -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script src='https://kit.fontawesome.com/' crossorigin='anonymous'></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
 
 <body>
-    <div>
+    <div class="geral-container" style=" padding: 10px;">
         <nav>
             <ul>
                 <img src="./img/android-chrome-192x192.png" width="60" height="55" />
@@ -37,23 +37,35 @@
                         <h6>admin</h6>
                     </a></li>
             </ul>
-        </nav>
-        <div class="container">
-            <h2 align="center">Painel</h2>
-            <div class="d-flex bg-light" style="width: 100%; height:100%">
-                <div class="p-3 border">
+        </nav><br>
+        <div class="container" align="center" style="width: 55%; height: 100%">
+
+            <h2 align="center" style="color: rgb(248, 169, 104)" ;> <strong> Painel</strong></h2>
+
+            <div class="d-flex bg-light" style="width: 80%; height: 100%;">
+
+                <div class="p-3 border" style="background-color: #e1e1e1; ">
+
                     <div class="container">
-                        <div class="btn-group">
+
+                        <div class="btn-group1">
+
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                Consultar Saldo + icone pesquisar
+                                <i class="fa fa-list "> Consultar Saldo </i>
                             </button>
+
                             <div class="dropdown-menu">
+
                                 <div class="dropdown-item" href="#">
                                     <center><strong>Insira o CPF do aluno:</strong> </center>
                                 </div>
+
                                 <form action="/consult_balance.php" class="was-validated">
-                                    <div class="form-group">
+
+                                    <div class="form-group" style="width: 100%; height: 150%; padding: 20px;">
+
                                         <!-- <label for="pwd"><strong> CPF:</strong></label> -->
+
                                         <center>
                                             <input type="text" class="form-control" id="" placeholder="123.456.789-00"
                                                 name="" required>
@@ -61,82 +73,144 @@
                                             <div class="invalid-feedback">Por favor, preencha este campo.</div>
                                     </div>
                                     </center>
+
                                     <center>
-
-                                        <!-- <div class="form-group form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" name="remember"
-                                                    required>confirme.
-                                                <div class="valid-feedback">Valido.</div>
-                                                <div class="invalid-feedback">Marque esta caixa de seleção para
-                                                    continuar.</div>
-                                            </label>
-                                        </div> -->
-
-                                        <button type="submit" class="btn btn-success">Buscar</button>
                                         <button type="reset" class="btn btn-danger">Cancelar</button>
-
+                                        <button type="submit" class="btn btn-success">Buscar</button>
                                     </center>
+
                                 </form>
                             </div>
                         </div>
 
-                        <div class="btn-group">
+                        <div class="p-2">
+                            
+                            <div class="btn-group2">
 
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                Cadastrar Livro
-                            </button>
+                                <div class="btn-group" align="center">
 
-                            <div class="dropdown-menu">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                        <i class="fa fa-book"> Cadastrar Livro </i>
+                                    </button>
 
-                                <div class="dropdown-item" href="#">
-                                    <center><strong>Livro:</strong> </center>
-                                </div>
+                                    <div class="dropdown-menu">
 
-                                <form action="/consult_balance.php" class="was-validated">
+                                        <form action="/consult_balance.php" class="was-validated">
 
-                                    <div class="form-group">
-                                        <label for=""><strong> Nome do Livro :</strong></label>
-                                        <input type="text" class="form-control" id="" placeholder="" name="" required>
-                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                            <div class="form-group" style="width: 100%; height: 150%; padding: 20px;">
+                                                <label for=""><strong> Nome do Livro :</strong></label>
+                                                <input type="text" class="form-control" id="" placeholder="" name=""
+                                                    required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
 
-                                        <label for=""><strong>Editora :</strong></label>
-                                        <input type="text" class="form-control" id="" placeholder="" name="" required>
-                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                                <label for=""><strong>Editora :</strong></label>
+                                                <input type="text" class="form-control" id="" placeholder="" name=""
+                                                    required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
 
-                                        <label for=""><strong> Autor :</strong></label>
-                                        <input type="text" class="form-control" id="" placeholder="" name="" required>
-                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                                <label for=""><strong> Autor :</strong></label>
+                                                <input type="text" class="form-control" id="" placeholder="" name=""
+                                                    required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
 
-                                        <label for=""><strong> Ano :</strong></label>
-                                        <input type="date" class="form-control" id="" placeholder="" name="" required>
-                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                                <label for=""><strong> Ano :</strong></label>
+                                                <input type="date" class="form-control" id="" placeholder="" name=""
+                                                    required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
 
-                                        <label for=""><strong> Quantidade :</strong></label>
-                                        <input type="number" class="form-control" id="" placeholder="" name="" required>
-                                        <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                                <label for=""><strong> Quantidade :</strong></label>
+                                                <input type="number" class="form-control" id="" placeholder="" name=""
+                                                    required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+                                            </div>
+
+                                            <center>
+
+                                                <div class="form-group form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" name="remember"
+                                                            required>confirme.
+                                                        <div class="valid-feedback">Valido.</div>
+                                                        <div class="invalid-feedback">Marque esta caixa de seleção para
+                                                            continuar.</div>
+                                                    </label>
+                                                </div>
+                                                <button type="reset" class="btn btn-danger">Limpar</button>
+                                                <button type="submit" class="btn btn-success">Avançar </button>
+                                            </center>
+
+                                        </form>
                                     </div>
-
-                                    <center>
-
-                                        <div class="form-group form-check">
-                                            <label class="form-check-label">
-                                                <input class="form-check-input" type="checkbox" name="remember"
-                                                    required>confirme.
-                                                <div class="valid-feedback">Valido.</div>
-                                                <div class="invalid-feedback">Marque esta caixa de seleção para
-                                                    continuar.</div>
-                                            </label>
-                                        </div>
-
-                                    </center>
-
-                                    <button type="reset" class="btn btn-danger">Limpar</button>
-                                    <button type="submit" class="btn btn-success">Avançar </button>
-
-                                </form>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- mensagem de alerta (livro cadastrado com sucesso!) -->
+
+                        <div class="p-2">
+                            <div class="btn-group3">
+                                <div class="btn-group" align="center">
+
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                        <i class="fa fa-user-plus"> Cadastrar Usúario</i>
+                                    </button>
+
+                                    <div class="dropdown-menu">
+                                        <form action="/cadastro_usuario.php" class="was-validated">
+
+                                            <div class="form-group " style="width: 100%; height: 150%; padding: 20px;">
+                                                <label for=""><strong> Nome :</strong></label>
+                                                <input type="text" class="form-control" id="" placeholder="Nome"
+                                                    name="nome" required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                                <label for=""><strong>Endereço :</strong></label>
+                                                <input type="text" class="form-control" id=""
+                                                    placeholder="Bairro ,Rua ,N°" name="endereco" required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                                <label for=""><strong> telefone :</strong></label>
+                                                <input type="telefone" class="form-control" id=""
+                                                    placeholder="1234-5678" name="telefone" required>
+
+
+                                                <label for=""><strong> Celular :</strong></label>
+                                                <input type="text" class="form-control" id=""
+                                                    placeholder="(00) 1 2345-6789" name="celular" required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                                <label for=""><strong> E-Mail: </strong></label>
+                                                <input type="email" class="form-control" id=""
+                                                    placeholder="Nome@email.com.br" name="email" required>
+                                                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+
+                                                <label for=""><strong> Profissão :</strong></label>
+                                                <input type="text" class="form-control" id=""
+                                                    placeholder="estudante/trabalhador" name="profissao" required>
+
+
+                                                <label for=""><strong> Data de Nascimento :</strong></label>
+                                                <input type="date" class="form-control" id="" name="nascimento"
+                                                    required>
+                                            </div>
+
+                                            <center>
+                                                <button type="reset" class="btn btn-danger">Limpar</button>
+                                                <button type="submit" class="btn btn-success">Avançar </button>
+                                            </center>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- mensagem de alerta (Usuario cadastrado com sucesso!) -->
+
+
+<!-- continuar ..... -->
+
 
                     </div>
                 </div>
@@ -150,7 +224,7 @@
 
         <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: #ff8c00;">
+            <div class="text-center p-3" style="background-color: rgb(248, 169, 104);">
                 Biblioteca Online © 2021
                 <?php
                 echo date("Y");
