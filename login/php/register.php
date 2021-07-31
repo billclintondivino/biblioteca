@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 					VALUES ('$username', '$email', '$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
-				echo "<script>alert('Uau! Registro de Usuário Concluído.')</script>";
+				echo "<script>alert(' Usuário Cadastrado com Sucesso!')</script>";
 				$username = "";
 				$email = "";
 				$_POST['password'] = "";
@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 				echo "<script>alert('Ops! Algo de Errado Aconteceu.')</script>";
 			}
 		} else {
-			echo "<script>alert('Ops! Esse Email Já Existi.')</script>";
+			echo "<script>alert('ERRO! Esse Email Já Existi.')</script>";
 		}
 	} else {
 		echo "<script>alert('Senha Não Corresponde.')</script>";
@@ -42,14 +42,15 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
 	<meta charset="utf-8">
-	<title>Home</title>
-
+	<title>Cadastro</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
 	<link rel="manifest" href="../img/site.webmanifest">
 	<link rel="stylesheet" href="../css/home.css">
 	<link rel="stylesheet" href="../css/login.css">
@@ -66,7 +67,6 @@ if (isset($_POST['submit'])) {
 		<ul>
 			<img src="../img/android-chrome-192x192.png" width="60" height="55" />
 			<li class="logo">Biblioteca Online</li>
-
 			<li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
 		</ul>
 	</nav>
@@ -74,9 +74,9 @@ if (isset($_POST['submit'])) {
 	<!-- logo -->
 	<div class="row">
 		<div class="col-1">
-			<div class="form-box">
+			<div class="form">
 
-				<div class="form">
+				
 					<form class="home.php" method="POST" class="login-form">
 						<center>
 							<h1 class='main-heading'>Cadastro</h1>
@@ -85,14 +85,31 @@ if (isset($_POST['submit'])) {
 						<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
 						<input type="password" placeholder="Senha" name="password" value="<?php echo $_POST['password']; ?>" required>
 						<input type="password" placeholder="Confirmar Senha" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
-						<button name="submit" class="btn">Register</button>
-						<p class="message">Já tenho conta? <a href="login.php">Login</a>.</p>
+						<button name="submit" class="btn">Registre</button>
+
+						&nbsp;&nbsp;
+
+						<h2>
+							<p class="message">Já tenho conta? <a href="login.php">Login</a>.</p>
+						</h2>
+
 					</form>
-				</div>
+
 			</div>
 		</div>
 	</div>
+	
+	&nbsp;
 
+	<footer>
+        <!-- Copyright -->
+		
+        <div class="text-center" style="color: rgb(248, 169, 104);"><strong>Biblioteca Online ©</strong>
+            <?php
+            echo  date("Y");
+            ?>
+        </div>
+    </footer>
 
 	<script>
 		$(document).ready(function() {
@@ -102,15 +119,8 @@ if (isset($_POST['submit'])) {
 			});
 		});
 	</script>
-	
-	<footer>
-        <!-- Copyright -->
-        <div class="text-center" style=" size:100px ;color: rgb(248, 169, 104);"><strong>Biblioteca Online ©</strong>
-            <?php
-            echo date("Y");
-            ?>
-        </div>
-    </footer>
+
+
 
 </body>
 
