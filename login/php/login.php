@@ -50,6 +50,7 @@ if (isset($_POST['submit'])) {
         <ul>
             <img src="../img/android-chrome-192x192.png" width="60" height="55" />
             <li class="logo">Biblioteca Online</li>
+            <li class="items"> <a href="http://localhost/ppweb/projeto/biblioteca/login/views/home.html#"><strong>Inicio</strong></a></li>
 
             <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>

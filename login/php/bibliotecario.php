@@ -37,12 +37,12 @@
             <ul>
                 <img src="../img/android-chrome-192x192.png" width="60" height="55" />
                 <li class="logo">Biblioteca Online</li>
-                <li align="center"  ><i class='far fa-user-circle' style='font-size:200%; color:rgb(1, 148, 1)'> </i>
-                <a href=""></a>
-                <!--  <a
-                        href="http://localhost/ppweb/projeto/biblioteca/login/php/login.php"> 
-                        <h6>admin</h6>
-                    </a>-->
+                <li align="center"  ><i class='far fa-user-circle' style='font-size:250%; color:#ffffff'> </i>
+                <!-- <a href=""></a> -->
+                 <a
+                        href="http://localhost/ppweb/projeto/biblioteca/login/views/home.html#"> 
+                        <h6>sair</h6>
+                    </a>
                 </li>
             </ul>
         </nav><br>
