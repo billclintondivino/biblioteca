@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Biblioteca Online</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+
+                <img src="../img/android-chrome-192x192.png" width="60" height="55" />
+
+                <li class="logo">Biblioteca Online</li>
+
+                <li class="items">
+                    <a href="http://localhost/ppweb/projeto/biblioteca/login/views/home.html#">Home</a>
+                </li>
+
+                <li class="items">
+                    <a href="http://localhost/ppweb/projeto/biblioteca/login/views/livros.html#">Livraria</a>
+                </li>
+
+                <li class="items"> <strong><a href="#">Sobre</a></strong></li>
+
+                <li class="items"> <a href="http://localhost/ppweb/projeto/biblioteca/login/php/login.php">Login</a>
+                </li>
+
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container internas">
+            <div class="row" style="margin: 1%;">
+                <div class="col-md-9 conteudo" style=" padding: 0 5px">
+                    <p style="background-color:#e1e1e1; border-radius: 10px;;"><img loading="lazy"
+                            class="alignleft wp-image-215" src="../img/bbtonly.png" alt="biblioteca Online" width="100%"
+                            height="100%">
+                    </p>
+                    <hr>
+                    <div style="background-color:#e1e1e1; border-radius: 10px; padding: 50px;">
+
+                        <h4>Sobre</h4>
+                        <p> Este software visa ajudar na gestão da biblioteca oferecendo recursos que auxiliam o
+                            bibliotecário a
+                            controlar de maneira segura e eficaz o acervo da biblioteca e toda sua movimentação.
+                        </p>
+
+                        <h5>Conteúdo</h5>
+                        <p>
+                            O acervo digital sendo variado, dividindo entre categorias de livros,
+                            artigos, obras literarias, notícias jornalisticas , produção intelectual de alunos e
+                            pesquisadores,
+                            dentre outros.</p>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-md-3" style=" background-color:#e1e1e1; border: 1px solid #E6A551; border-radius: 3px;">
+                    <br>
+                    <div class="boxsidebar">
+
+                        <img src="https://octodex.github.com/images/blacktocats.png" alt="github" width="100%"
+                            height="100%">
+                        <p>
+                        <h5 align="center"><i>Desenvolvedores</i></h5>
+                        </p>
+                        <br>
+                        <p>Coordenador:</p><a href="https://github.com/clodbrasilino" class="linksidebar">Clodoaldo
+                            Brasilinio</a>
+                        <hr>
+
+                        <p>Aluno(a):</p><a href="https://github.com/billclintondivino" class="linksidebar">Bill C.
+                            Divino</a>
+                        <hr>
+
+                        <p>Aluno(a):</p><a href="https://github.com/JhonatasSaints" class="linksidebar">Jhonatas R.S.
+                            Santos</a>
+                        <hr>
+
+                        <p>Aluno(a):</p><a href="https://github.com/Renata0" class="linksidebar">Renata P. Fontenele</a>
+                        <hr>
+
+                        <p>C. Desenvolvimento
+                            de Software</p>
+                        <a href="https://www.instagram.com/ifpi_parnaibaoficial/" class="linksidebar">
+                            (IFPI-Parnaíba)</a>
+
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #E6A551;">
+            Biblioteca Online &copy;
+            <?php echo date("Y");?>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('.btn').click(function () {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
